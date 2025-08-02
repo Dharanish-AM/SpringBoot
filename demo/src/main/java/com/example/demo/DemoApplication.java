@@ -6,12 +6,11 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EnableJpaRepositories("com.example.repository")
-@EntityScan("com.example.model")
+@EnableJpaRepositories("com.example.demo.repository")
+@EntityScan("com.example.demo.model")
 public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
-
 }
